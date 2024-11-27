@@ -1,0 +1,84 @@
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+html {
+  font-family: Pretendard-Regular, Arial, Helvetica, sans-serif;
+}
+
+.full {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  transition: background 0.1s;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  font-weight: normal;
+
+  &:hover {
+    filter: brightness(0.9);
+  }
+
+  &.primary {
+    background: #007bff;
+    color: #fff;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+
+  input[type="file"] {
+    display: none;
+  }
+
+  .warning {
+    padding: 1rem 0;
+    font-size: 0.8rem;
+    color: #aaa;
+  }
+
+  .file-description {
+    text-align: center;
+    font-size: 0.8rem;
+  }
+
+  .file-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 1rem;
+
+    aspect-ratio: 2/1;
+    font-size: 0.8rem;
+    &.active {
+      border-color: #007bff;
+    }
+  }
+
+  .form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    gap: 0.5rem;
+  }
+}

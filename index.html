@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>secure patch</title>
+    <meta name="description" content="Securely patch files" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/simple-notify/dist/simple-notify.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/simple-notify/dist/simple-notify.min.js"></script>
+    <link rel="stylesheet" href="/static/style/reset.css" />
+    <link rel="stylesheet" href="/static/style/style.css" />
+    <script type="module" src="/static/lib/index.js"></script>
+  </head>
+  <body>
+    <main class="full">
+      <div class="form">
+        <input type="file" id="source" />
+        <input type="file" id="data" />
+        <div class="form-grid">
+          <div class="file-description">Original</div>
+          <div class="file-description">Patched or Patch</div>
+          <div class="file-display" id="source-display"></div>
+          <div class="file-display" id="data-display"></div>
+          <button id="generate" class="primary">Generate Patch</button>
+          <button id="apply" class="primary">Apply Patch</button>
+        </div>
+        <div class="warning">
+          Generating patch for large files may take a while
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
