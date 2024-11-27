@@ -2,7 +2,7 @@ import init, {
   apply_patch,
   generate_patch,
   init_library,
-} from "/static/lib/secure-patch/secure-patch.js";
+} from "/static/lib/secure-patch/secure_patch.js";
 
 Error.stackTraceLimit = 100;
 
